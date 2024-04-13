@@ -1,0 +1,11 @@
+version: "1.0"
+services:
+  web:
+    build: .
+    tty: true
+    volumes:
+      - .:/work
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+      - "8081:8081"
